@@ -15,10 +15,10 @@ def load_json_file(file_path):
         data = json.load(file)
     return data
 
-folder_path = 'data/'
+folder_path = '../data/'
 
 files = []
-for file in os.listdir('data'):
+for file in os.listdir('../data'):
     files.append(file)
 
 game_files = files[:-3]
@@ -27,9 +27,9 @@ for game in game_files:
     game_id = game.split('_')[0]
     game_ids.append(game_id)
 
-metadata = load_json_file('data/metadata.json')
-teams = load_json_file('data/metadata_teams.json')
-players = load_json_file('data/metadata_players.json')
+metadata = load_json_file('../data/metadata.json')
+teams = load_json_file('../data/metadata_teams.json')
+players = load_json_file('../data/metadata_players.json')
 
 metadata_df = pd.DataFrame(metadata['games'])
 metadata_df['date'] = pd.to_datetime(metadata_df[['month', 'day', 'year']]).dt.strftime('%m-%d-%Y')
@@ -66,7 +66,7 @@ def get_awayTeam(nbaId):
     return awayTeam
 
 def get_home_players(nbaId):
-    event = load_jsonl_file('data/'+str(nbaId)+'_events.jsonl')
+    event = load_jsonl_file('../data/'+str(nbaId)+'_events.jsonl')
     event_df = pd.DataFrame(event)
     
     home_players_ids = event_df['homePlayers'].apply(pd.Series)
@@ -83,7 +83,7 @@ def get_home_players(nbaId):
 
 
 def get_away_players(nbaId):
-    event = load_jsonl_file('data/'+str(nbaId)+'_events.jsonl')
+    event = load_jsonl_file('../data/'+str(nbaId)+'_events.jsonl')
     event_df = pd.DataFrame(event)
     
     away_players_ids = event_df['awayPlayers'].apply(pd.Series)
@@ -99,7 +99,7 @@ def get_away_players(nbaId):
     return away_players
 
 def get_tracking(nbaId):
-    tracking = load_jsonl_file('data/'+str(nbaId)+'_tracking.jsonl')
+    tracking = load_jsonl_file('../data/'+str(nbaId)+'_tracking.jsonl')
     tracking_df = pd.DataFrame(tracking)
     
     return tracking_df
@@ -124,7 +124,7 @@ def get_xy_df(nbaId, player_id, home=True):
                     'y': player['xyz'][1]
                 })
 
-    file_path = 'data/' + str(nbaId) + '_tracking.jsonl'
+    file_path = '../data/' + str(nbaId) + '_tracking.jsonl'
 
     # Read the JSONL file and process each JSON object
     with jsonlines.open(file_path) as reader:
@@ -138,14 +138,6 @@ def get_xy_df(nbaId, player_id, home=True):
     return xy_df
 
 
-def get_all_home_player():
-    date_list = metadata_df.date.tolist()
-    date_player = {}
-    for date in date_list:
-        nbaId = get_nbaId(date) 
-        date_player[date] = get_home_players(nbaId)
-    return date_player 
-     
 
 
 

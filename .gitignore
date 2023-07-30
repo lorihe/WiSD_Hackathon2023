@@ -3,3 +3,5 @@ new_data/
 archive/
 boto3/
 .env
+.ipynb_checkpoints/
+__pycache__/

@@ -1,5 +1,10 @@
 ## WiSD_Hackathon2023
 
+Dashboard Screenshot:
+
+
+
+![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
 ### Introduction
 
 This project includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.

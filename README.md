@@ -46,5 +46,5 @@ ___
 [Requirement](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/requirements.txt)
 
 **Execute the dashboard application:** <br />
-Only for data owners - run notebook '04_Dashboard', open 'http://localhost:1020/' in web browser to view.
+Only for data owners - run notebook '01_Data Processing', '03_Modeling and Assessment', '04_Dashboard', then open 'http://localhost:1020/' in web browser to view.
 

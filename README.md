@@ -27,9 +27,9 @@ If more datasets are provided in the same naming format and data structure, the 
 
 ### Difficulties and Challenges Faced During Process
 
-a) While switching the selection of games and players on the web application, it first took 10 seconds for the plot to show up, due to the large amount of information in the tracking data. After rewriting the pipeline to filter the jsonl file first instead of reading and transforming the whole file into dataframe, the loading time reduce to 5-8 seconds.
- b) The total number of games provided is relatively small, thus the issue of quantity exists. For example, some players have more than 200 shots on record, while some only have 1 shot. In this project, players who have less than 10 shots on record were not considered for bX assessment. 
- c) Basketball was not my specialized area, so I had to quickly study the basics of this sport. My mentors explained to me lots of detailed knowledge about basketball and help me a lot in tackling this challenge. 
+a.) While switching the selection of games and players on the web application, it first took 10 seconds for the plot to show up, due to the large amount of information in the tracking data. After rewriting the pipeline to filter the jsonl file first instead of reading and transforming the whole file into dataframe, the loading time reduce to 5-8 seconds.
+ b.) The total number of games provided is relatively small, thus the issue of quantity exists. For example, some players have more than 200 shots on record, while some only have 1 shot. In this project, players who have less than 10 shots on record were not considered for bX assessment. 
+ c.) Basketball was not my specialized area, so I had to quickly study the basics of this sport. My mentors explained to me lots of detailed knowledge about basketball and help me a lot in tackling this challenge. 
 
 ### Next steps/ What would you like to add if given more time to work on your project?
 

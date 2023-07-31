@@ -2,7 +2,9 @@
 
 ### Introduction
 
-This project includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
+This project is part of the Women in Sports Data Hackathon2023, which is sponsored by Sportradar. The data provided by Sportradar contains detailed information on momentary events and player/ball coordinates from 18 NBA games, as well as player and team information.
+
+This submission includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
 
   - Application Screenshot:
 

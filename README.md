@@ -1,6 +1,9 @@
 ## WiSD_Hackathon2023
 
 Dashboard Screenshot:
+
+
+
 ![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
 ### Introduction
 

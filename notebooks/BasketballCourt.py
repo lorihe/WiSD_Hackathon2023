@@ -117,15 +117,54 @@ def get_layout():
         y1=25,
         line=dict(color='black', width=1, dash='dash')
     )
+    
+    hoop_board = go.layout.Shape(
+        type="line",
+        x0=-43,
+        y0=-3,
+        x1=-43,
+        y1=3,
+        line=dict(color='black', width=1)
+    )
+    
+    hoop_board_mirror = go.layout.Shape(
+    type="line",
+    x0=43,
+    y0=-3,
+    x1=43,
+    y1=3,
+    line=dict(color='black', width=1)
+    )
+    
+    hoop = go.layout.Shape(
+    type="circle",
+    x0=-40.5,
+    y0=1.25,
+    x1=-43,
+    y1=-1.25,
+    line=dict(color='black', width=1),
+    fillcolor='rgba(0, 0, 0, 0)'
+    )
+    
+    hoop_mirror = go.layout.Shape(
+    type="circle",
+    x0=40.5,
+    y0=1.25,
+    x1=43,
+    y1=-1.25,
+    line=dict(color='black', width=1),
+    fillcolor='rgba(0, 0, 0, 0)'
+    )
+
 
     # Create the layout with the basketball court and additional lines
     layout = go.Layout(
         xaxis=dict(range=[-47, 47], dtick=5, constrain='domain'),
         yaxis=dict(range=[-25, 25], dtick=5, scaleanchor = "x", scaleratio = 1),
-        plot_bgcolor='white',
+        plot_bgcolor='rgba(0, 0, 0, 0)',
         shapes=[court_shape, center_shape, lane_shape, arc_shape, arc_top, arc_bottom, half_court_line,
                 lane_shape_mirror, arc_shape_mirror, arc_top_mirror, arc_bottom_mirror, half_court_line_mirror,
-                lane_circle_shape, lane_circle_shape_mirror]
+                lane_circle_shape, lane_circle_shape_mirror, hoop_board, hoop_board_mirror, hoop, hoop_mirror]
     )
 
     return layout

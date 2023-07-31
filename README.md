@@ -38,3 +38,6 @@ The web application is not showing the game results yet. The next step is to ret
 Due to the timing and quantity of data, the bX assessment method was built in a relatively simple way. In the following steps, the method should be reviewed and adjusted to improve its justification. 
 
 While separating ‘dribble shot’ and ‘non-dribble shot’, the method was to check event data and call an event ‘dribble shot’ if the row before it was noted as ‘dribble’ with the same player. This method should be reviewed and adjusted if needed.
+
+- dev environment
+[Requirement](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/requirements.txt)

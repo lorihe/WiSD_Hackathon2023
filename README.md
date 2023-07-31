@@ -39,5 +39,6 @@ Due to the timing and quantity of data, the bX assessment method was built in a 
 
 While separating ‘dribble shot’ and ‘non-dribble shot’, the method was to check event data and call an event ‘dribble shot’ if the row before it was noted as ‘dribble’ with the same player. This method should be reviewed and adjusted if needed.
 
-- dev environment
+---
+**dev environment
 [Requirement](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/requirements.txt)

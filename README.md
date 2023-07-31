@@ -1,13 +1,15 @@
 ## WiSD_Hackathon2023
 
-Dashboard Screenshot:
+### Introduction
+
+This project includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
+
+Application Screenshot:
 
 
 
 ![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
-### Introduction
 
-This project includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
 
 ### Purpose & Motivation
 
@@ -15,11 +17,11 @@ The purpose of the project is to organize and visualize the comprehensive inform
 
 ### Solution 
 
-I used Python to process the raw data and build pipelines to extract, transform, and load information. For the data science analysis, I used pandas to further process and explore the data, then I used scikit-learn to build the prediction model. I created an indicator ‘bX’, short for ‘beyond expectation’. As the model was built upon shot information of all shots made by all players, it reflects an overall shooting ability. Therefore, I use the model to predict each player’s previous shots. If a player scores while the model predicts ‘miss’ based on the scenario, the player performances beyond expectation and receives positive bX points, and vice versa. For the web application, I extract data with built pipelines and used plotly + Dash to visualize them on an interactive local web page, then display the bX scores calculated for all players in the data science part. Kde measurement is used to darken dots in areas where the player frequently moves to.
+I created an indicator ‘bX’, short for ‘beyond expectation’. As the shot success prediction model was built upon shot information of all shots made by all players, it reflects an overall shooting ability. Therefore, I use the model to predict each player’s previous shots. If a player scores while the model predicts ‘miss’ based on the scenario, the player performances beyond expectation and receives positive bX points, and vice versa. For the web application, I extract data with built pipelines and used plotly + Dash to visualize them on an interactive local web page, then display the bX scores calculated for all players in the data science part. Kde measurement is used to darken dots in areas where the player frequently moves to.
 
 ### How/When to Use Application/Recommendation
 
-The application runs only when the linked datasets are available. By reviewing and using the interactive tools of the application, front office staff and coach can check out: 1. Each player’s movement pattern in each quarter of each game; 2. Where on the court each player made shots in each game and which shots scored or missed; 3. What’s each player’s bX score. 4. A comparison between bX scores of all players who attended the selected game.
+The application runs only when the linked datasets are available (For this project, the data is not available to the public). By reviewing and using the interactive tools of the application, front office staff and coach can check out: 1. Each player’s movement pattern in each quarter of each game; 2. Where on the court each player made shots in each game and which shots scored or missed; 3. What’s each player’s bX score. 4. A comparison between bX scores of all players who attended the selected game.
 
 If more datasets are provided in the same naming format and data structure, the project notebooks can be easily adjusted to include new data. 
 

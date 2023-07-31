@@ -2,7 +2,9 @@
 
 ### Introduction
 
-This project includes two parts: 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
+This project is part of the Women in Sports Data Hackathon2023, which is sponsored by [Sportradar](https://sportradar.com/?lang=en-us). The data provided by [Sportradar](https://sportradar.com/?lang=en-us) contains detailed information on momentary events and player/ball coordinates from 18 NBA games, as well as player and team information.
+
+This submission includes two parts (all in notebooks folder): 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
 
   - Application Screenshot:
 
@@ -38,3 +40,11 @@ The web application is not showing the game results yet. The next step is to ret
 Due to the timing and quantity of data, the bX assessment method was built in a relatively simple way. In the following steps, the method should be reviewed and adjusted to improve its justification. 
 
 While separating ‘dribble shot’ and ‘non-dribble shot’, the method was to check event data and call an event ‘dribble shot’ if the row before it was noted as ‘dribble’ with the same player. This method should be reviewed and adjusted if needed.
+
+___
+**Dev environment:** <br />
+[Requirement](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/requirements.txt)
+
+**Execute the dashboard application:** <br />
+Only for data owners - run notebook '04_Dashboard', open 'http://localhost:1020/' in web browser to view.
+

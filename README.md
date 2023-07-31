@@ -23,7 +23,7 @@ I created an indicator ‘bX’, short for ‘beyond expectation’. As the shot
 
 ### How/When to Use Application/Recommendation
 
-The application runs only when the linked datasets are available (For this project, the data is not available to the public). By reviewing and using the interactive tools of the application, front office staff and coach can check out: 1. Each player’s movement pattern in each quarter of each game; 2. Where on the court each player made shots in each game and which shots scored or missed; 3. What’s each player’s bX score. 4. A comparison between bX scores of all players who attended the selected game.
+The application runs only when the linked datasets are available (For this project, the data is not available to the public). By reviewing and using the interactive tools of the application, front office staff and coach can check out: 1. Each player’s movement pattern in each quarter of each game; 2. Where on the court each player made shots in each game and which shots scored or missed; 3. A comparison between the selected player's bX scores on different shot types. 4. A comparison between bX scores of all players who attended the selected game.
 
 If more datasets are provided in the same naming format and data structure, the project notebooks can be easily adjusted to include new data. 
 

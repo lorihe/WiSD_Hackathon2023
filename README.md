@@ -7,11 +7,9 @@ This project is part of the [Women in Sports Data](https://www.womeninsportsdata
 This submission includes two parts (all in notebooks folder): 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
 
   - Application Screenshot:
-
-
-
 ![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
 
+  - Interactive Display:
 ![Interactive Display](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Interactive%20Display.gif?raw=true)
 
 ### Purpose & Motivation

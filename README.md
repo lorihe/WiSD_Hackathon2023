@@ -12,6 +12,7 @@ This submission includes two parts (all in notebooks folder): 1. Data science an
 
 ![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
 
+![Interactive Display](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Interactive%20Display.gif?raw=true)
 
 ### Purpose & Motivation
 

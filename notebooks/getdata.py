@@ -66,6 +66,12 @@ def get_awayTeam(nbaId):
     return awayTeam
 
 def get_home_players(nbaId):
+    '''
+    Get home players names of specified game.
+    
+    Arg: nbaId(str)
+    Return: list
+    '''
     event = load_jsonl_file('../data/'+str(nbaId)+'_events.jsonl')
     event_df = pd.DataFrame(event)
     
@@ -83,6 +89,12 @@ def get_home_players(nbaId):
 
 
 def get_away_players(nbaId):
+    '''
+    Get away players names of specified game.
+    
+    Arg: nbaId(str)
+    Return: list
+    '''
     event = load_jsonl_file('../data/'+str(nbaId)+'_events.jsonl')
     event_df = pd.DataFrame(event)
     
@@ -105,6 +117,16 @@ def get_tracking(nbaId):
     return tracking_df
 
 def get_xy_df(nbaId, player_id, home=True):
+    '''
+    Get coordinate info of specified player in specified game. Exclude coordinates out of the court. Drop rows with duplicated 
+    (period, gameClock).
+       
+    Args: nbaId(str)
+    player_id(str)
+    home(boolean)
+    
+    Return: dataframe
+    '''
 
     player_data = []
 

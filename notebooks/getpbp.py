@@ -20,6 +20,12 @@ def play_by_play_url(game_id):
     return "https://stats.nba.com/stats/playbyplayv2/?gameId={0}&startPeriod=0&endPeriod=14".format(game_id)
     
 def extract_data(game_id):
+    '''
+    Extract play by play data of specified game.
+    
+    Arg: game_id(str)
+    Return: dataframe
+    '''
     url = play_by_play_url(game_id)
     r = http.request('GET', url, headers=header_data)
     resp = json.loads(r.data)
@@ -31,6 +37,15 @@ def extract_data(game_id):
     return frame
 
 def get_shot(game_id, player):
+    '''
+    Get rows that contain scored shots and missed shots, not including free throws, from play by play data of specified player in a 
+    specified game.
+    
+    Args: game_id(str)
+          player(str): player name
+    
+    Return: dataframe
+    '''
     df = extract_data(game_id)
     all_shots = df[(df['EVENTMSGTYPE'] == 1) | (df['EVENTMSGTYPE'] == 2)]
     player_shots = all_shots[all_shots['PLAYER1_NAME'] == player].reset_index(drop = True)

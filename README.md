@@ -5,11 +5,11 @@
 This project was a submission to [Women in Sports Data](https://www.womeninsportsdata.org/) Hackathon2023, a six-week sprint program using NBA tracking data. The data was provided by [Sportradar](https://sportradar.com/?lang=en-us), containing "events" and "tracking" data from 18 NBA games, as well as information on participating players and teams.
 
 Raw data: \
-metadata: 1 json file. 18 rows containing general information about each game (team names, season, date, etc.) \
-metadata_player: 1 json file. 1533 rows containing information about players (name, height, date of birth, position, etc.) \
-metadata_teams: 1 json file. 56 rows containing information about teams (name, abbrev., etc.) \
-tracking: 18 jsonl files. Each file has 88,000-100,000 lines, containing frame-by-frame in-game information (player coordinate, ball coordinate, game clock, shot clock, etc.) \
-events: 18 jsonl files. Each file has 3500-3700 lines, containing event-by-event in-game information (event type, present players, game clock, shot clock, etc.) 
+*metadata*: 1 json file. 18 rows containing general information about each game (team names, season, date, etc.) \
+*metadata_player*: 1 json file. 1533 rows containing information about players (name, height, date of birth, position, etc.) \
+*metadata_teams*: 1 json file. 56 rows containing information about teams (name, abbrev., etc.) \
+*tracking*: 18 jsonl files. Each file has 88,000-100,000 lines, containing frame-by-frame in-game information (player coordinate, ball coordinate, game clock, shot clock, etc.) \
+*events*: 18 jsonl files. Each file has 3500-3700 lines, containing event-by-event in-game information (event type, present players, game clock, shot clock, etc.) 
 
 - This submission includes two parts: 
 1. A shot success prediction model and players' shooting ability assessment based on the model;

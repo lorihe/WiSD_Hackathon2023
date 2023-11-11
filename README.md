@@ -4,7 +4,7 @@
 
 This project was a submission to [Women in Sports Data](https://www.womeninsportsdata.org/) Hackathon2023, a six-week sprint program using NBA tracking data. The data was provided by [Sportradar](https://sportradar.com/?lang=en-us), containing "events" and "tracking" data from 18 NBA games, as well as information on participating players and teams.
 
-Raw data \
+Raw data: \
 metadata: 1 json file. 18 rows containing general information about each game (team names, season, date, etc.) \
 metadata_player: 1 json file. 1533 rows containing information about players (name, height, date of birth, position, etc.) \
 metadata_teams: 1 json file. 56 rows containing information about teams (name, abbrev., etc.) \

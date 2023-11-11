@@ -2,11 +2,20 @@
 
 ### Introduction
 
-This project is part of the [Women in Sports Data](https://www.womeninsportsdata.org/) Hackathon2023, which is sponsored by [Sportradar](https://sportradar.com/?lang=en-us). The data provided by [Sportradar](https://sportradar.com/?lang=en-us) contains detailed information on momentary events and player/ball coordinates from 18 NBA games, as well as player and team information.
+This project was a submission to [Women in Sports Data](https://www.womeninsportsdata.org/) Hackathon2023, a six-week sprint program using NBA tracking data. The data was provided by [Sportradar](https://sportradar.com/?lang=en-us), containing "events" and "tracking" data from 18 NBA games, as well as information on participating players and teams.
 
-This submission includes two parts (all in notebooks folder): 1. Data science analysis which builds a shot success prediction model and uses it to assess players’ shooting ability; 2. A web application that visualizes processed data and displays data science analysis results, for front office staff and coaches to review.
+ - Raw data
+metadata: 1 json file. 18 rows containing general information about each game (team names, season, date, etc.)
+metadata_player: 1 json file. 1533 rows containing information about players (name, height, date of birth, position, etc.)
+metadata_teams: 1 json file. 56 rows containing information about teams (name, abbrev., etc.)
+tracking: 18 jsonl files. Each file has 88,000-100,000 lines, containing frame-by-frame in-game information (player coordinate, ball coordinate, game clock, shot clock, etc.)
+events: 18 jsonl files. Each file has 3500-3700 lines, containing event-by-event in-game information (event type, present players, game clock, shot clock, etc.)
 
-  - Application Screenshot:
+This submission includes two parts: 
+1. A shot success prediction model and players' shooting ability assessment based on the model;
+2. A web application that a) visualizes tracking data to reveal each player's player pattern and b) displays player ability assessment results, for front office staff and coaches to review.
+
+  - Screenshot of Web Application :
     
 ![Dashboard screenshot](https://github.com/lorihe/WiSD_Hackathon2023/blob/main/Dashboard%20Img%20Display.PNG?raw=true)
 
